@@ -1,0 +1,14 @@
+.Home {
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('../../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.Home .content {
+    color: aliceblue;
+    margin: auto;
+    width: fit-content;
+    margin: 35vh auto;
+}
+.Home .content button {
+    margin-top: 20px;
+}

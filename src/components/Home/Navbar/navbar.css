@@ -1,0 +1,32 @@
+.logo {
+    cursor: pointer;
+}
+span {
+    color: aqua;
+}
+.bg {
+    background: fixed rgba(0,0,0,0.75);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding: 10px 0;
+    color: aliceblue;
+}
+.navigate ul li {
+    font-size: 18px;
+    list-style: none;
+    display: inline;
+    margin: auto 10px;
+    font-size: medium;
+}
+.navigate ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.navigate ul li a:hover {
+    color: cyan;
+}
