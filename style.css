@@ -1,64 +1,184 @@
 * {
-    text-align: center;
-    margin: auto;
-    font-family: 'Courier New', Courier, monospace;
-}
-body {
-    background: linear-gradient(cyan,cyan);
-    background-size: cover;
-    background-position: center;
-    height: fit-content;
-}
-h1 {
-    /* color: aliceblue; */
-    margin-top: 10vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    box-sizing: border-box;
+    cursor: pointer;
 }
 span {
     color: aqua;
 }
-.parent {
-    margin: 10vh auto;
-    background-color: coral;
-    border: 2px solid black;
-    border-radius: 20px;
-    width: 500px;
-    min-width: 20vh;
-}
-.parent h3 {
-    color: aliceblue;
-    margin: 20px auto;
-}
-.parent .hasil {
-    margin: 20px auto 35px;
-    font-weight: 700;
-    font-size: 20px;
-    width: 80%;
-    overflow-x: auto;
-    color: aliceblue;
-}
-.container {
-    margin: 30px auto;
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-}
-button {
-    padding: 10px 25px;
-    border-radius: 10px;
-    background: cyan;
-}
-.container .inputText {
-    box-sizing: border-box;
-    min-height: 30px;
-    max-height: 90px;
-    overflow: auto;
+.header {
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    margin: auto 20px;
-    padding: 10px 10px;
-    border-radius: 10px;
-    text-align: left;
-    text-indent: 5px;
-    font-size: 16px;
-    background: aliceblue;
+    height: 100vh;
+    cursor: pointer;
 }
 
+.bg {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    height: fit-content;
+    width: 100%;
+    height: 60px;
+}
+.navbar {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    color: #def2f1;
+    font-size: 12px;
+    cursor: pointer;
+}
+.navbar .logo .h1:hover {
+    outline: 2px solid white;
+}
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.navbar ul li a:hover {
+    color: aqua;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #feffff;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    cursor: pointer;
+}
+.content .judul {
+    text-align: center;
+    width: 70vh;
+    color: #feffff;
+}
+.content .judul h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.content #button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2b7a78;
+    color: #feffff;
+    margin-top: 50px;
+}
+.container .title h1{
+    text-align: center;
+    font-weight: 900;
+    margin: 20px 0;
+}
+#ABOUTME {
+    width: 700px;
+    padding: 40px 0;
+    margin: auto;
+    background: #feffff;
+}
+#ABOUTME .text {
+    margin: 100px 0;
+    text-align: justify;
+    text-indent: 50px;
+    /* background-color: #2b7a78; */
+}
+#ABOUTME #foto_1 {
+    width: 200px;
+    margin: 10px;
+}
+#PROJECT {
+    padding-top: 40px;
+    margin: auto;
+    background-color: cadetblue;
+    height: 100vh;
+    cursor: pointer;
+}
+#PROJECT .content {
+    /* width: 200%; */
+    height: fit-content;
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-around;
+}
+#PROJECT .content .project-sum {
+    overflow: hidden;
+    border: 2px dashed #2b7a78;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: aqua;
+    background-position: left;
+}
+#PROJECT .slider {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: auto;
+    font-size: 30px;
+    color: #feffff;
+}
+
+#CONTACT {
+    padding-top: 40px;
+    margin: auto;
+    background-color: #feffff;
+    height: 100vh;
+}
+#FOOTER {
+    background: rgba(0,0,0,0.75);
+    height: 20vh;
+    
+}
+@media (max-width: 400px) {
+    .container .title {
+        font-size: 12px;
+    }
+    .navbar {
+        width: 90%;
+    }
+    .navbar .logo {
+        font-size: 9px;
+        padding-left: 10px;
+    }
+    .navbar ul {
+        margin-left: 30px;
+        font-size: 9px;
+    }
+    .navbar ul li {
+        margin: 0 5px;
+    }
+    .content .judul h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .content .judul p {
+        font-size: 10px;
+    }
+    .content #button {
+        padding: 7px 15px;
+    }
+    #ABOUTME #foto_1 {
+        display: none;
+    }
+    #ABOUTME {
+        width: 87%;
+        margin: auto;
+        background: #feffff;
+    }
+    #ABOUTME .text {
+        margin: 50px 0;
+    }
+}
