@@ -142,12 +142,16 @@ span {
     height: 20vh;
     
 }
-@media (max-width: 400px) {
+@media (max-width: 700px) {
+    .bg {
+        height: 50px;
+    }
     .container .title {
         font-size: 12px;
     }
     .navbar {
         width: 90%;
+        height: 55px;
     }
     .navbar .logo {
         font-size: 9px;
@@ -155,7 +159,7 @@ span {
     }
     .navbar ul {
         margin-left: 30px;
-        font-size: 9px;
+        font-size: 10px;
     }
     .navbar ul li {
         margin: 0 5px;
@@ -165,10 +169,11 @@ span {
         margin-bottom: 15px;
     }
     .content .judul p {
-        font-size: 10px;
+        font-size: 11px;
     }
     .content #button {
         padding: 7px 15px;
+        border-radius: 7px;
     }
     #ABOUTME #foto_1 {
         display: none;
@@ -178,7 +183,16 @@ span {
         margin: auto;
         background: #feffff;
     }
+    #ABOUTME .text::before {
+        content: "";
+        display: block;
+        background-image: url(img/foto_1.JPG);
+        background-size: cover;
+        width: 150px;
+        height: 200px;
+        margin: 0 auto 20px;
+      }
     #ABOUTME .text {
-        margin: 50px 0;
+        margin: 20px 0;
     }
 }
